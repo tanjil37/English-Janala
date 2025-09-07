@@ -58,24 +58,25 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-              <a href="" class=""
-                ><i class="fa-solid fa-circle-question"></i>FAQ</a
-              >
-            </li>
-            <li>
-              <a href="" class=""
-                ><i class="fa-solid fa-book-open"></i>Learn</a
-              >
-            </li>
-            <li>
-              <a href="" class=""
-                ><i class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a
-              >
-            </li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-circle-question"></i>FAQ</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-book-open"></i>Learn</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
+                >
+              </li>
             </ul>
           </div>
           <a href="" class="flex items-center gap-1"
-            ><span class="text-lg font-bold">English</span><img src="assets/logo.png" alt="" />
+            ><span class="text-lg font-bold">English</span
+            ><img src="assets/logo.png" alt="" />
             <span class="font-bangla text-lg font-semibold">জানালা</span></a
           >
         </div>
@@ -93,37 +94,68 @@
             </li>
             <li>
               <a href="" class="btn btn-soft btn-primary"
-                ><i class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
               >
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="flex items-center justify-between w-11/12 mx-auto flex-col-reverse md:flex-row">
-        <div class="flex-1 text-center md:text-left">
-            <h2 class="text-4xl font-bold mb-4"><span class="text-sky-400">English</span> is Easy!!</h2>
-            <p class="font-bangla text-2xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-
-        </div>
-        <div class="flex-1">
-            <img src="assets/hero-student.png" alt="">
-        </div>
+    <section
+      class="flex items-center justify-between w-11/12 mx-auto flex-col-reverse md:flex-row"
+    >
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-4">
+          <span class="text-sky-400">English</span> is Easy!!
+        </h2>
+        <p class="font-bangla text-2xl">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+      </div>
+      <div class="flex-1">
+        <img src="assets/hero-student.png" alt="" />
+      </div>
     </section>
 
     <section class="text-center mb-3">
-         <h2 class="text-4xl font-bold mb-4"><span class="text-sky-400">Let's </span>Learn Vocabularies</h2>
-        <div id="lesson-container" class="mt-4 flex justify-center flex-wrap space-x-3">
-
-        </div>
+      <h2 class="text-4xl font-bold mb-4">
+        <span class="text-sky-400">Let's </span>Learn Vocabularies
+      </h2>
+      <div
+        id="lesson-container"
+        class="mt-4 flex justify-center flex-wrap space-x-3"
+      ></div>
     </section>
-    <section id="word-container" class="w-11/12 mx-auto bg-gray-100 p-10 my-10 grid grid-cols-3 gap-4">
-      
+    <section
+      id="word-container"
+      class="w-11/12 mx-auto bg-gray-100 p-10 my-10 grid grid-cols-3 gap-4"
+    >
       <div class="space-y-4 col-span-full text-center font-bangla">
-        <h2 class="font-normal text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নাই</h2>
-        <p class="font-medium text-3xl text-[#292524]">একটি Lesson Select করুন।</p>
+        <h2 class="font-normal text-sm text-[#79716B]">
+          আপনি এখনো কোন Lesson Select করেন নাই
+        </h2>
+        <p class="font-medium text-3xl text-[#292524]">
+          একটি Lesson Select করুন।
+        </p>
       </div>
     </section>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="details-container" class="space-y-5">
+          
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="js/script.js"></script>
   </body>
